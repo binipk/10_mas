@@ -12,10 +12,10 @@ eureka:
 
 spring:
   application:
-    name: swcamp-user-service
+    name: swcamp-order-service
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://mysql.coffit.xyz:3322/cqrs
+    url: jdbc:mysql://localhost:3306/cqrs
     username: swcamp
     password: swcamp
   jpa:
@@ -25,26 +25,3 @@ spring:
     properties:
       hibernate:
         format_sql: true
-
-mybatis:
-  configuration:
-    map-underscore-to-camel-case: true
-  mapper-locations: mappers/**/*.xml
-  type-aliases-package: com.ohgiraffers.userservice.query.dto
-
-jwt:
-  secret: LH9QZL8upsPBfuDY+Dkb1kT9DZIIUSuA2u4O6Lfi3mkEfeWtETpVTcR/8SMZdJWn/xNTuCQBE6rBvDXgnVmscQ==
-  expiration: 1800000
-  refresh-expiration: 604800000
-
-
-
-
-
-
-
-
-
-
-
-
